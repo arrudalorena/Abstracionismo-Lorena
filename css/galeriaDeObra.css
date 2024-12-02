@@ -1,0 +1,145 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não afetem a largura */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Remove barra de rolagem horizontal */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8bc2fd; 
+    text-align: center;
+    color: white;
+    padding: 0px 0px; /* Aumenta o tamanho do cabeçalho */
+    justify-content: center; /* Alinha os itens verticalmente no centro */
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Aumenta o tamanho da fonte do título */
+    color: #ffffff;
+}
+
+.logo {
+    margin: 20px auto 0; /* Adiciona uma margem superior para posicionar a logo mais abaixo */
+    height: 50px; /* Ajusta o tamanho da logo */
+    width: 150px;
+    border-radius: 50px;
+}
+
+/* Navegação */
+nav {
+    background-color: #ffffff;
+    padding: 9px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.artwork {
+    flex: 1 1 300px; /* Tamanho mínimo de 300px */
+    margin: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Tipografia */
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    padding: 25px 0;
+    width: 100%;
+    background-image: url('/image/teste3.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 20vh; /* Altura desejada */
+    order: 2;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-message {
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-message p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-links p {
+    color: #000000;
+    font-weight: bold;
+}

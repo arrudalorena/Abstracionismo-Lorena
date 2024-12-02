@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  overflow-x: hidden; /* Remove barra de rolagem horizontal */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #e8a372;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 1px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Aumenta o tamanho da fonte do título */
+  color: #ffffff;
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 10px auto; /* Centraliza horizontalmente */
+  display: block;
+}
+
+/* Navegação */
+nav {
+  background-color: #ffffff;
+  padding: 8px 0;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+/* Conteúdo Principal */
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Linha do Tempo */
+.linhaTempo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px; /* Espaçamento entre os quadrados */
+  margin-bottom: 30px;
+}
+
+.caixa {
+  background-color: #e8a372;
+  padding: 20px;
+  height: 340px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 3px solid #000000; /* Bordas */
+  transition: transform 0.3s;
+  position: relative;
+  border-radius: 5px;
+}
+
+
+.caixa:hover{
+transform: scale(1.05);}
+
+.caixa h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.caixa p {
+  font-size: 1.2em;
+  color: white;
+}
+
+/* Rodapé */
+footer {
+  /* background-color: #333; */
+  background-image: url('../image/teste3.jpeg');
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

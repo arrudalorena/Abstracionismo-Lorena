@@ -1,0 +1,284 @@
+/* Reset e estilo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333; /* Adicionado para manter uniformidade */
+}
+
+/* Cabeçalho */
+header {
+  background-image: url('../image/teste3.jpeg');
+  padding: 20px 10px;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: 0 auto 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+}
+
+/* Seção principal */
+.about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Quatro colunas fixas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-box {
+  background: linear-gradient(135deg, #f8b195, #f67280);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.about-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-box p {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-box button {
+  background-color: #355c7d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-box button:hover {
+  background-color: #6c5b7b;
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .about {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+  background-image: url('../image/teste3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+/* Conteúdo principal */
+main {
+  max-width: 1100px; /* Define uma largura máxima */
+  margin: 20px auto; /* Centraliza o main na página */
+  padding: 20px;
+}
+
+/* Seção principal */
+.about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Quatro colunas fixas */
+  gap: 20px; /* Espaço entre os quadrados */
+  padding: 20px;
+}
+
+/* Estilos para os quadrados */
+.about-box {
+  background: linear-gradient(135deg, #f8b195, #f67280); /* Gradiente moderno */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  min-height: 150px; /* Altura mínima para os quadrados */
+}
+
+/* Interação ao passar o mouse */
+.about-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-box p {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-box button {
+  background-color: #355c7d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-box button:hover {
+  background-color: #6c5b7b;
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .about {
+      grid-template-columns: repeat(3, 1fr); /* Três colunas em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+      grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+      grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+  }
+}
+.term-box {
+  background: linear-gradient(135deg, #f8b195, #f67280); /* Gradiente moderno */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;
+  text-align: justify; /* Melhor leitura */
+  margin-bottom: 20px; /* Espaçamento entre os quadrados */
+}
+
+.term-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Efeito ao passar o mouse */
+}
+
+.term-box p {
+  margin: 0; /* Remove margens extras */
+  line-height: 1.6; /* Melhora o espaçamento entre linhas */
+  font-size: 1em; /* Tamanho de texto ajustado */
+}
+/* Estilos para os quadrados da seção de cookies */
+.caixa {
+  background: linear-gradient(135deg, #f8b195, #f67280); /* Gradiente moderno */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;
+  text-align: justify; /* Melhor leitura */
+  margin-bottom: 20px;
+}
+
+.caixa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para alinhar os quadrados */
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os quadrados */
+  justify-content: space-around; /* Centraliza os quadrados */
+}
+
+.caixa p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1em;
+}

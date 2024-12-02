@@ -1,0 +1,164 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden; /* Remove barra de rolagem horizontal */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    color: white;
+    width: 100%; t
+
+}
+
+/* Logo */
+.logo img {
+    margin: 20px auto 0; /* Adiciona uma margem superior para posicionar a logo mais abaixo */
+    height: 50px; /* Ajusta o tamanho da logo */
+    width: 150px;
+    border-radius: 50px;
+}
+
+/* Título */
+header h1 {
+    margin: 0;
+    margin-right: -2%;
+    font-size: 2.5em; /* Aumenta o tamanho da fonte do título */
+}
+
+/* Navegação */
+nav {
+    background-color: #ffffff;
+    padding: 9px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Impede que os itens saiam da tela */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* Seção de Artistas */
+.artist-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artist-card {
+    background-color: #e57373;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.artist-card:hover {
+    transform: scale(1.05);
+}
+
+.artist-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.artist-card button {
+    background-color: #c62828;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.artist-card button:hover {
+    background-color: #b71c1c;
+}
+
+.more-info {
+    display: none;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#fooWe {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: larger;
+    float: left;
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    background-image: url('/image/teste3.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 20vh; /* Altura desejada */
+}
+
+.footer-message {
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-message p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-links p {
+    color: #ffffff;
+    font-weight: bold;
+}

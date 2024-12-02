@@ -1,0 +1,261 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    position: relative;
+    background-image: url('../image/imagemfundo.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0; /* Remover o espaçamento no cabeçalho */
+    text-align: center;
+    margin: 0; /* Garantir que não haja margem */
+}
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.logo{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+
+/* Menu */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de opções */
+.options-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.option {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.option a {
+    color: white;
+    text-decoration: none;
+}
+
+.blue { background-color: #007bff; }
+.red { background-color: #dc3545; }
+.yellow { background-color: #ffc107; }
+.purple { background-color: #6f42c1; }
+.light-green { background-color: #28a745; }
+.dark-green { background-color: #155724; }
+
+/* Ícone de seta */
+.arrow-icon {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.arrow-icon img {
+    width: 30px; /* Tamanho reduzido para deixar a seta menor */
+    height: auto;
+}
+
+/* Retângulo "Razões para acessar o site" */
+.reasons-title {
+    background-image: url('../image/teste3.jpeg');
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 40px 0 20px;
+}
+
+.reasons-title h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Seção de razões */
+.reasons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.reason-container {
+    margin: 20px 0;
+}
+
+.reason-balloon {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.rounded-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    /* background-color: #333; */
+    background-image: url('../image/teste3.jpeg');
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove margem padrão do body */
+body {
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove qualquer padding interno */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    position: relative;
+    background-image: url('../image/teste3.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px; /* Espaçamento interno para o conteúdo */
+    text-align: center;
+    width: 100%; /* Garante que cubra toda a largura */
+    margin: 0; /* Remove qualquer margem externa */
+    border: none; /* Garante que não tenha bordas */
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Fundo escuro para contraste do texto */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Título */
+h1 {
+    font-size: 2em;
+    color: #fff;
+    margin: 0; /* Remove margens ao redor do título */
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px auto; /* Centraliza horizontalmente */
+    display: block;
+}

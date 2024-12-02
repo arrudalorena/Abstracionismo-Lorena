@@ -1,0 +1,113 @@
+* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o footer fique na parte inferior */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1cc7b7;
+    text-align: center;
+    color: white;
+    padding: 0px 0; /* Aumenta o padding para dar mais altura ao header */
+}
+
+header h2 {
+    font-size: 36px;
+    margin-bottom: 10px; /* Dá um espaço entre o título e a logo */
+}
+
+/* Logo dentro do header, abaixo do título */
+.logo {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 20px auto; /* Centraliza a logo e dá um espaço ao redor */
+}
+
+/* Navegação */
+nav {
+    background-color: #ffffff;
+    padding: 8px 0;
+    text-align: center;
+    margin-top: 40px; /* Aumenta o espaçamento entre o header e o nav */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margens */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
+/* Seção principal */
+main {
+    text-align: center;
+    margin: 40px 0;
+    flex: 1; /* Faz o main ocupar o espaço disponível */
+}
+
+/* Seção do Fórum */
+.forum-section h3 {
+    font-size: 32px;
+    background-color: #0f847a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.forum-message {
+    margin-top: 30px;
+}
+
+.forum-message p {
+    font-size: 20px;
+    background-color: #a7e0dc;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.questionnaire-button {
+    display: block;
+    background-color: #1cc7b7;
+    color: white;
+    padding: 15px;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Rodapé */
+footer {
+    padding: 25px 0;
+    background-image: url('/image/teste3.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
